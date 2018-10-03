@@ -19,4 +19,14 @@ function PostContainer(props) {
 
 }
 
+PostContainer.PropTypes = {
+    post: PropTypes.shape({
+        comments: PropTypes.arrayOf(PropTypes.object),
+        imageURL: PropTypes.string.isRequired,
+        likes: PropTypes.number.isRequired,
+        thumbnailURL: PropTypes.string.isRequired,
+        username: PropTypes.string.isRequired,
+    }),
+}
+
 export default PostContainer;
