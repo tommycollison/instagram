@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import './PostContainer.css'
 
 function PostContainer(props) {
+    return (
     <div className="postContainer">
     <div className="postHeader">
         <img src={props.post.thumbnailURL} alt="" />
@@ -14,6 +15,8 @@ function PostContainer(props) {
     <CommentSection comments={props.post.comments} />
 
     </div>
+    )
+
 }
 
 export default PostContainer;
