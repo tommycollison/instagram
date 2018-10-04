@@ -1,0 +1,21 @@
+.searchContainer { 
+    background-color: red;
+    margin-top: 30px;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.searchContent { 
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+}
+
+input { 
+    position: relative;
+    border: 1px solid black;
+    text-align: center;
+    height: 30px;
+    padding: 2px;
+
+}
