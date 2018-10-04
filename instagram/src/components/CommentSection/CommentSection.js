@@ -3,7 +3,7 @@ import Comment from './Comment'
 import './CommentSection.css'
 
 function CommentSection(props) {
-return (
+    return (
     <div className="commentSection">
     {props.comments.map((comment) => (
         <Comment

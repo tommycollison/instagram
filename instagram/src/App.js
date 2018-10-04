@@ -1,9 +1,9 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
+import React, {Component} from 'react';
 import './App.css';
-import dummyData from './dummy-data'
-import SearchBar from './components/SearchBar/SearchBar'
-import PostContainer from './components/PostContainer/PostContainer'
+import dummyData from './dummy-data';
+import SearchBar from './components/SearchBar/SearchBar';
+import PostContainer from './components/PostContainer/PostContainer';
+
 
 class App extends Component {
   constructor() { 
@@ -18,11 +18,12 @@ class App extends Component {
     return (
       <div className="App">
         <SearchBar />
-        {this.state.posts.map((post) => (
-          <PostContainer 
+        {this.state.posts.map((post) => { return (
+          <PostContainer
           post={post}
-          key={post.timestamp} />
-        ))}
+          key={post.timestamp} />)
+        }
+        )}
       </div>
     );
   }
