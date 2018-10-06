@@ -15,12 +15,12 @@ const SearchBar = () => {
             <img className="img logo" src={logo} alt="insta" />
             <div className="headline"><p>Instagram</p></div>
                 <form>
-                 <input type='search' placeholder='Search'></input>
+                 <input placeholder="Search meeee 🔍" type='search'></input>
                 </form>
                 <div className="icons">
-                <img className="img heart" src={heart} />
-                <img className="img user" src={user} />
-                <img className="img compass" src={compass} />
+                <img className="img heart" alt="I <3 Lambda" src={heart} />
+                <img className="img user" alt="name's Spraul, John Spraul" src={user} />
+                <img className="img compass" alt="find your way, you must" src={compass} />
                 </div>
         </div>
         </div>
