@@ -29,12 +29,13 @@ class App extends Component {
         <PostHeader />
         <PostContainer 
           post={post}
+          comments={post.comments}
+          username={post.username}
           key={post.timestamp}
-          thumbnail={post.thumbnail}
-          thumbnailURL={post.thumbnailUrl}
+          thumbnail={post.thumbnailUrl}
           image={post.imageUrl}
           likes={post.likes}
-          comments={post.comments} />
+       />
       </div>)
             })}
            

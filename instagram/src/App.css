@@ -30,3 +30,12 @@
     transform: rotate(360deg);
   }
 }
+
+.post img { 
+  height: 300px;
+  width: 300px;
+}
+
+.userPhoto { 
+  border: 1px solid yellow;
+}
