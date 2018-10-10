@@ -1,14 +1,15 @@
-import React, {Component} from 'react';
+import React from 'react';
 import './PostsPage.css'
-import dummyData from './dummy-data';
-import PostContainer from './components/PostContainer/PostContainer';
-import PostHeader from './../src/components/PostHeader/PostHeader';
+import PostContainer from './../PostContainer/PostContainer';
+import PostHeader from './../PostHeader/PostHeader';
+import SearchBar from './../SearchBar/SearchBar';
 
 function PostsPage(props) {
     return (
-        <div>
-        {this.state.posts.map(post => { return (
-            <div className="NewPostsPageContent">
+        <div className="appContainer">
+           <SearchBar />
+           {props.posts.map(post => { return (
+            <div className="postContainer">
               <PostHeader />
               <PostContainer 
                 post={post}
@@ -19,11 +20,10 @@ function PostsPage(props) {
                 image={post.imageUrl}
                 likes={post.likes}
              />
-            </div> // closes NewPostsPageContent
-                )
-            })}
+            </div> 
+           )})}
                  
         </div>
     )}
 
-export default PostsPage
+export default PostsPage;

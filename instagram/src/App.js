@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import './App.css';
 import dummyData from './dummy-data';
-import SearchBar from './components/SearchBar/SearchBar';
 import PostsPage from './components/PostContainer/PostsPage'
 
 class App extends Component {
@@ -9,7 +8,6 @@ class App extends Component {
     super();
     this.state = {
       posts: dummyData,
-      inputText: '',
     };
   }
 
@@ -21,10 +19,8 @@ class App extends Component {
 
     return (
      <div className="appContainer">
-     <p>Foo</p>
-        <SearchBar />
-        <PostsPage />
-        </div>)
+      <PostsPage posts={this.state.posts} />
+    </div>)
   }
 }
 
