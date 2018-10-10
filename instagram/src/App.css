@@ -36,6 +36,6 @@
   width: 300px;
 }
 
-.userPhoto { 
-  border: 1px solid yellow;
+.PostHeaderElements {
+  border: 1px solid pink;
 }
