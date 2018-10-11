@@ -1,7 +1,8 @@
 import React, {Component} from 'react';
 import './App.css';
 import dummyData from './dummy-data';
-import PostsPage from './components/PostContainer/PostsPage'
+import PostsPage from './components/PostContainer/PostsPage';
+import Authenticate from './components/Authenticate/authenticate';
 
 class App extends Component {
   constructor() { 
@@ -12,11 +13,6 @@ class App extends Component {
   }
 
   render() {
-
-    if (!this.state.posts.length) { 
-      return <p className="appContainer">fetching pictures of food</p>
-    }
-
     return (
      <div className="appContainer">
       <PostsPage posts={this.state.posts} />
@@ -24,5 +20,4 @@ class App extends Component {
   }
 }
 
-
-export default App;
+export default Authenticate(App);
