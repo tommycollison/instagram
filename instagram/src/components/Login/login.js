@@ -4,7 +4,7 @@ class Login extends Component {
     constructor(props) { 
         super(props)
 
-        this.setState = { 
+        this.state = { 
             username: '',
             password: '',
         }
@@ -22,17 +22,19 @@ class Login extends Component {
 
     render() { 
         return ( 
-            <form onSubmit={this.login}>
+            <form onSubmit={this.handleLoginSubmit}>
             <input
                 name="username"
                 placeholder="J-o-h-n"
                 type="text"
-                value={this.setState.username} />
+                value={this.state.username}
+                onChange={this.handleInputChange} />
             <input 
                 name="password"
                 placeholder="S-p-r-a-u-l"
                 type="text"
-                value={this.setState.password} />
+                value={this.state.password}
+                onChange={this.handleInputChange} />
             <button><p>Come see some cat pics, John Spraul</p></button>
 
             

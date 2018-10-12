@@ -1,5 +1,5 @@
-import React from 'React';
-import Login from './../Login/login';
+import React, {Component} from 'react';
+import Login from './../Login/Login';
 
 const Authenticate = (App) =>
     class extends React.Component { 
