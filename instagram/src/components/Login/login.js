@@ -1,4 +1,6 @@
 import React, {Component} from 'react';
+import { Alert } from 'reactstrap';
+
 
 class Login extends Component { 
     constructor(props) { 
@@ -22,8 +24,9 @@ class Login extends Component {
 
     render() { 
         return ( 
+            <div className="loginWrap">
             <form onSubmit={this.handleLoginSubmit}>
-            <input
+             <input
                 name="username"
                 placeholder="J-o-h-n"
                 type="text"
@@ -36,9 +39,8 @@ class Login extends Component {
                 value={this.state.password}
                 onChange={this.handleInputChange} />
             <button><p>Come see some cat pics, John Spraul</p></button>
-
-            
             </form>
+            </div>
         )
     }
 }
